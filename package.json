@@ -1,0 +1,35 @@
+{
+    "name": "ClickFocus",
+    "version": "0.1",
+    "title": "Click and focus on an entity",
+    "author": {
+        "name": "Peng Yu",
+        "url": "https://github.com/pengyu"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+        {
+            "type": "GPL",
+            "url": "http://www.opensource.org/licenses/gpl-license.php"
+        }
+    ],
+    "dependencies": {
+        "Craftty": ">0.4"
+    },
+    "description": "Click and focus on an entity with this component, and blur on clicking background or other entities without this component.",
+	  "jsfiddle": "http://jsfiddle.net/cFKkvMzmdD/ESYNB",
+    "keywords": [
+        "click",
+        "focus",
+        "blur",
+        "background"
+    ],
+    "homepage": "https://github.com/pengyu/Crafty-ClickFocus",
+    "files": [
+        "clickfocus.js"
+    ]
+}
+
