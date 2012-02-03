@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body, html { margin:0; padding: 0; overflow:hidden; font-family:Arial; font-size:20px }
+      #cr-stage { border:2px solid black; margin:5px auto}
+    </style>
+  </head>
+  <body>
+    <script src="http://cdn.crafty-modules.com/crafty-DEBUG.js"></script>
+    <script>
+      window.onload = function () {
+        Crafty.init(400, 336);
+
+        Crafty.scene("main", function() {
+          Crafty.modules(
+          'http://cdn.craftycomponents.com'
+          , { ClickFocus: "release" }
+          , function() {
+            var e1=Crafty.e("2D, DOM, Color, ClickFocus")
+            .attr({
+              x: 50
+              , y: 50 
+              , w: 50
+              , h: 50
+            })
+            .color("red")
+            .bind('Focus', function() {
+              this.color("yellow")
+            })
+            .bind('Blur', function() {
+              this.color("red")
+            })
+            ;
+
+            var e2=Crafty.e("2D, DOM, Color, ClickFocus")
+            .attr({
+              x: 250
+              , y: 50 
+              , w: 50
+              , h: 50
+            })
+            .color("red")
+            .bind('Focus', function() {
+              this.color("blue")
+            })
+            .bind('Blur', function() {
+              this.color("red")
+            })
+            ;
+
+            var e3=Crafty.e("2D, DOM, Color, ClickFocus")
+            .attr({
+              x: 250
+              , y: 250 
+              , w: 50
+              , h: 50
+            })
+            .color("red")
+            .bind('Focus', function() {
+              this.color("cyan")
+            })
+            .bind('Blur', function() {
+              this.color("red")
+            })
+            ;
+          });
+        });
+
+        Crafty.scene("main");
+      };
+    </script>
+  </body>
+</html>
